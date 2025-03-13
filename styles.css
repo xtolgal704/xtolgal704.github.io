@@ -1,0 +1,172 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer fuente base y color de fondo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo del header */
+header {
+    background-color: #ffcc00; /* Azul fuerte */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del contenido principal */
+#info {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Imágenes */
+.image-container {
+    display: flex; /* Usamos Flexbox para colocar imagen y texto en línea */
+    align-items: flex-start; /* Alinea el contenido verticalmente al principio */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    justify-content: flex-start;
+}
+
+.image-container img {
+    max-width: 200px; /* Hacer las imágenes más pequeñas */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Añadir espacio a la derecha de las imágenes */
+}
+
+.text-content {
+    flex: 1; /* El texto ocupará el espacio restante */
+}
+
+/* Listas sin puntos */
+ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: #e67e22; /* Naranja vibrante */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d35400; /* Naranja más oscuro */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ffcc00;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #info {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .image-container img {
+        max-width: 150px; /* Imágenes más pequeñas en dispositivos móviles */
+    }
+
+    .image-container {
+        flex-direction: column; /* En pantallas pequeñas, cambia a columna */
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%; /* El contenido de texto ocupará todo el espacio en pantallas pequeñas */
+    }
+}
