@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del header */
+header {
+    background-color: #ffcc00; /* Azul fuerte */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+/* Contenedor principal */
+.metas.cuerpo {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los artículos (metas) */
+article {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+/* Encabezado de cada meta */
+article header {
+    background-color: #ffcc00; /* Azul fuerte */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Encabezados de tabla */
+table thead {
+    background: #CCCCCC;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+}
+
+/* Estados de los indicadores */
+td.norel {
+    background: #CCCCCC;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+td.disp {
+    background: #a0e79f;
+    color: #155724;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hola {
+    background-color: #ffcc00; /* Azul fuerte */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    list-style-type: none; /* Elimina los puntos */
+}
+
+/* Estilos generales */
+.toggle-container {
+    display: none; /* Ocultar por defecto */
+    padding: 10px;
+    background: #ffffff;
+}
+
+/* Estilos cuando el elemento está expandido */
+.toggle-button {
+    background-color: #CCCCCC; /* Azul fuerte */
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.toggle-button.expanded {
+    background-color: #CCCCCC; /* Azul fuerte */
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Mostrar el contenido cuando el botón está expandido */
+.toggle-button.expanded + .toggle-container {
+    display: block;
+}
+
+/* Estilo para el enlace por defecto */
+a {
+    color: #CCCCCC; /* Cambia este valor por el color que desees */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+  
+  /* Estilo para el enlace cuando el ratón pasa por encima */
+  a:hover {
+    text-decoration: underline; /* Añade el subrayado solo cuando el ratón pasa por encima */
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ffcc00;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.875rem;
+}
