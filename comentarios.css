@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffcc00; /* Azul fuerte */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos para el contenedor del formulario */
+#comentarios {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+#comentarioForm {
+    margin-bottom: 20px;
+}
+
+#comentarioForm label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#comentarioForm input, 
+#comentarioForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#comentarioForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#comentarioForm button:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para los comentarios */
+#comentarios-lista {
+    margin-top: 20px;
+}
+
+.comentario {
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 5px solid #ffcc00;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.comentario strong {
+    color: #ffcc00;
+}
+
+.comentario span {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ffcc00;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.875rem;
+}
