@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - ODS 7</title>
+    <link rel="stylesheet" href="comentarios.css"> <!-- Nuevo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Deja tu Comentario</h1>
+        <nav>
+            <ul>
+                <li><a href="sostenibilidad.html">Inicio</a></li>
+                <li><a href="informacion.html">Energias renovables</a></li>
+                <li><a href="solucionesfuturo.html">Metas</a></li>
+                <li><a href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="comentarios">
+        <h2>Comparte tu Opinión</h2>
+
+        <!-- Formulario para agregar comentarios -->
+        <form id="comentarioForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <button type="submit">Enviar Comentario</button>
+        </form>
+
+        <h3>Comentarios Recientes</h3>
+        <div id="comentarios-lista">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ODS 7 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="comentarios.js"></script> <!-- Llamamos al JavaScript -->
+
+    <button id="adminLogin">Iniciar sesión como admin</button>
+        <button id="adminLogout" style="display: none;">Cerrar sesión</button>
+            <div id="comentarios-lista"></div>
+
+</body>
+</html>
